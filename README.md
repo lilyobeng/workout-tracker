@@ -3,9 +3,14 @@
 Being healthy is more than just working out with orange fitness you can track your porogess daily
 
 Screenshots
-![Workout](Workout-img/Workout.png)
-Technologie![Workout](https://user-images.githubusercontent.com/68597243/134758970-969501c0-f000-43e1-952b-5e1a0088f9ed.png)
-s Used
+![Workout](https://user-images.githubusercontent.com/68597243/134759012-8519077e-e0b4-4794-a801-04c17df1af69.png)
+
+<img width="1413" alt="Workout copy" src="https://user-images.githubusercontent.com/68597243/134759016-a8803858-c0e3-4fbf-a634-bbd7eee65d6f.png">
+
+<img width="1411" alt="Run" src="https://user-images.githubusercontent.com/68597243/134759045-5fae5052-ac2a-456e-ad84-aea3b1fd8ad7.png">
+
+
+Technologies Used
 Client: HTML, CSS, EJS
 
 Server: Node, Express, MongoDB
