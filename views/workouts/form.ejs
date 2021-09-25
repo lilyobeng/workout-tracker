@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <% if (typeof user !== 'undefined') { %>
+    <span>Welcome, <%= user.name %></span>
+<a href="/logout">Log Out</a>
+<% } else { %>
+<a href="/auth/google">Login with Google</a>
+<% } %>
+    <div class="testbox">
+      <form action="/workouts/form" method = "POST">
+        <div class="banner">
+         <div class="tracker-img"><img src="../images/bruno-nascimento-PHIgYUGQPvU-unsplash.jpg" alt=""></div> 
+        </div>
+        <p>Workout Information</p>
+        <label>Exercise:</label>
+        <input type="text" name="Exercise" /><br />
+        <div class="item">
+          <label for="email">Workout Type<span>*</span></label>
+          <input type="text" name="Type" /><br />
+        </div>
+        <div class="item">
+            <label>Sets</label>
+            <select name="Sets">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option></select
+            ><br />
+        </div>
+        <div class="item">
+            <label>Duration:</label>
+            <input type="text" name="Duration" /><br />
+        </div>
+        <div class="item">
+            <label>Date:</label>
+            <input type="datetime-local"  name="Date"/>
+            <br/>
+        </div>   
+        <div class="btn-block">
+          <button type="submit" href="/">Add Workout</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+</body>
+</html>

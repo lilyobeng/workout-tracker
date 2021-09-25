@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hompage</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <% if (typeof user !== 'undefined') { %>
+      <span>Welcome, <%= user.name %></span>
+ <div class="logout-btn"> <a href="/logout">Log Out</a></div>
+  <% } else { %>
+  <a href="/auth/google">Login with Google</a>
+  <% } %>
+  </form>
+</nav>
+    </div>
+   <h2><p>“The pain you feel today, will be the strength you feel tomorrow.”</p></h2>
+    <img src="https://source.unsplash.com/collection/83159664/1300x700">
+  </body>
+</html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Document</title>
+</head>
+<body>
+  <% if (typeof user !== 'undefined') { %>
+    <span>Welcome, <%= user.name %></span>
+<a href="/logout">Log Out</a>
+<% } else { %>
+<a href="/auth/google">Login with Google</a>
+<% } %>
+<div class="workout-img">
+  <img src="../images/ambitious-creative-co-rick-barrett-g_bglWB48JA-unsplash.jpg" alt="">
+</div>
+  <h3>Workout Details</h3>
+
+  <button class="workout-btn"><a  href="/workouts/form">Add Workout</a></button>
+      <div class="table1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Exercise</th>
+            <th scope="col">Date</th>
+            <th scope="col">Type</th>
+            <th scope="col">Sets</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Edit</th> 
+            <th scope="col">Delete</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <% workouts.forEach(function(el) { %>
+            <tr>
+              <th scope=“row”><%=el.Exercise%></th>
+              <td><%=el.Date%></td>
+              <td><%=el.Type%></td>
+              <td><%=el.Sets%></td>
+              <td><%=el.Duration%></td>
+              <td><a href="/workouts/edit/<%=el._id%>"class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a></td>
+              <td><a href="/workouts/delete/<%=el._id%>" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a></td>
+              </td>
+            </tr>
+            <% }); %>
+          
+          
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
