@@ -4,7 +4,8 @@ Being healthy is more than just working out with orange fitness you can track yo
 
 Screenshots
 ![Workout](Workout-img/Workout.png)
-Technologies Used
+Technologie![Workout](https://user-images.githubusercontent.com/68597243/134758970-969501c0-f000-43e1-952b-5e1a0088f9ed.png)
+s Used
 Client: HTML, CSS, EJS
 
 Server: Node, Express, MongoDB
