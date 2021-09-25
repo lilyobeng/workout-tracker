@@ -3,7 +3,7 @@
 Being healthy is more than just working out with orange fitness you can track your porogess daily
 
 Screenshots
-
+<img width="1413" alt="Workout copy" src="https://user-images.githubusercontent.com/68597243/134758747-97b9d923-a014-46be-b014-8110192b549e.png"
 
 Technologies Used
 Client: HTML, CSS, EJS
