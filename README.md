@@ -1,6 +1,8 @@
 # Orange Fitness Tracker
 
-Being healthy is more than just working out with orange fitness you can track your porogess daily
+Starting a new Fitness journey can be challenging especially staying motivated. With orange fitness trackeer you can keep track of your workout progress.
+
+“The pain you feel today, will be the strength you feel tomorrow.”- Unknown
 
 Screenshots
 ![Workout](https://user-images.githubusercontent.com/68597243/134759012-8519077e-e0b4-4794-a801-04c17df1af69.png)
